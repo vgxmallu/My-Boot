@@ -5,7 +5,7 @@ from pyrogram import idle
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 from vgx import app, scheduler
-from vgx.database.db_chedul import db, run_job
+from vgx.database.db_chedul import _db, run_job
  
 
 
