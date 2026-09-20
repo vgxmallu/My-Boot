@@ -18,7 +18,7 @@ async def restore_jobs():
     """Reschedules jobs from DB on restart"""
     logger.info("♻️  Restoring Database Jobs...")
     count = 0
-    jobs = await db.get_all_jobs()
+    jobs = await _db.get_all_jobs()
 
     async for job in jobs:
         if job.get('paused'):
