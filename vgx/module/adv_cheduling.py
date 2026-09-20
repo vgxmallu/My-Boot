@@ -4,7 +4,7 @@ import datetime
 from pyrogram.enums import ButtonStyle
 
 
-from vgx.database.db_chedul import db
+from vgx.database.db_chedul import _db as db
 from vgx.module import sessions
 from vgx import app, scheduler
 
